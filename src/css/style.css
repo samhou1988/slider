@@ -1,0 +1,191 @@
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+.container {
+    width: 480px;
+    margin: 30px auto;
+}
+/** slider style **/
+.slider {
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider:hover .slide-btn {
+    display: block;
+}
+
+.slide-list {
+    list-style: none;
+    height: 640px;
+    width: 3360px;
+    position: absolute;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+}
+
+.slide-list li {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 480px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.slide-list li a {
+    position: absolute;
+}
+
+.slide-list li a span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.slide-btn {
+    display: none;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    z-index: 100;
+    top: 270px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slide-next-btn {
+    right: 0;
+}
+
+.slide-prev-btn {
+    left: 0;
+}
+
+.slide-icon {
+    position: absolute;
+    list-style: none;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    z-index: 100;
+}
+
+.slide-icon li {
+    float: left;
+    text-indent: -9999em;
+    background: #ccc;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    display: block;
+    margin: 2px 3px;
+    cursor: pointer;
+}
+
+.slide-icon li.active {
+    background: orange;
+}
+
